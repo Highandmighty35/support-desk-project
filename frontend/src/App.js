@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import NewTicket from './pages/NewTicket';
+import Tickets from './pages/Tickets';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
             <Route path="/Register" element={<Register/>} />
             <Route path='/New-Ticket' element={<PrivateRoute />}>
               <Route path='/New-Ticket' element={<NewTicket />} />
+            </Route>
+            <Route path='/Tickets' element={<PrivateRoute />}>
+              <Route path='Tickets' element={<Tickets />} />
             </Route>
           </Routes>
         </div>
