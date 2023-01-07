@@ -23,7 +23,7 @@ function App() {
               <Route path='/New-Ticket' element={<NewTicket />} />
             </Route>
             <Route path='/Tickets' element={<PrivateRoute />}>
-              <Route path='Tickets' element={<Tickets />} />
+              <Route path='/Tickets' element={<Tickets />} />
             </Route>
           </Routes>
         </div>
